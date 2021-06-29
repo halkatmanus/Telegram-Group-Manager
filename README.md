@@ -6,7 +6,9 @@ Originally a simple group management bot with multiple admin features, it has ev
 Maushi Can be found on telegram as [Maushi](https://t.me/maushibot).
 
 Alternatively, [find me on telegram](https://t.me/videodatabase)! 
-## You can also fork and tap the Deploy To Heroku button below to deploy straight to Heroku!
+
+## How to Deploy:
+You can fork the repo and tap the Deploy To Heroku button below to deploy straight to Heroku!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/halkatmanus/Telegram-Group-Manager)
 
@@ -38,7 +40,7 @@ from tg_bot.sample_config import Config
 
 
 class Development(Config):
-    OWNER_ID = 123456789  # your telegram ID
+    OWNER_ID = "123456789"  # your telegram ID
     OWNER_USERNAME = "username"  # your telegram username
     API_KEY = "your bot api key"  # api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
