@@ -29,8 +29,8 @@ class Config(object):
     DONATION_LINK = "https://www.paypal.me/ssraut"  # EG, paypal
     CERT_PATH = None
     PORT = 5000
-    DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
-    STRICT_GBAN = False
+    DEL_CMDS = True  # Whether or not you should delete "blue text must click" commands
+    STRICT_GBAN = True
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
     BAN_STICKER = 'AgADaQADwZxgDA'  # Get sticker ID by sending your sticker to @LCxStickerID_bot
     ALLOW_EXCL = True  # Allow ! commands as well as /
