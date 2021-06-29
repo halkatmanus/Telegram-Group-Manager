@@ -1,23 +1,14 @@
-# Marie-2.0-English
+# Maushi-3.0-English
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
-Originally a simple group management bot with multiple admin features, it has evolved, becoming extremely modular and 
-simple to use.
+Originally a simple group management bot with multiple admin features, it has evolved, becoming extremely modular and simple to use.
 
-Can be found on telegram as [Marie](https://t.me/BanhammerMarie_bot).
+Maushi Can be found on telegram as [Maushi](https://t.me/maushibot).
 
-Marie and I are moderating a [support group](https://t.me/MarieSupport), where you can ask for help setting up your
-bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. Of course
-I'll also help when a database schema changes, and some table column needs to be modified/added. Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
+Alternatively, [find me on telegram](https://t.me/videodatabase)! 
+## You can also fork and tap the Deploy To Heroku button below to deploy straight to Heroku!
 
-Join the [news channel](https://t.me/MarieNews) if you just want to stay in the loop about new features or
-announcements.
-
-Alternatively, [find me on telegram](https://t.me/SonOfLars)! (Keep all support questions in the support chat, where more people can help you.)
-
-## You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TGExplore/Marie-2.0-English)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/halkatmanus/Telegram-Group-Manager)
 
 ## Starting the bot.
 
@@ -25,10 +16,9 @@ Once you've setup your database and your configuration (see below) is complete, 
 
 `python3 -m tg_bot`
 
-
 ## Setting up the bot (Read this before trying to use!):
-Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older python versions!
-This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6.
+Please make sure to use python3.8.6, as I cannot guarantee everything will work as expected on older python versions!
+This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.8.6.
 
 ### Configuration
 
@@ -48,13 +38,13 @@ from tg_bot.sample_config import Config
 
 
 class Development(Config):
-    OWNER_ID = 570400686  # my telegram ID
-    OWNER_USERNAME = "Anandus"  # my telegram username
-    API_KEY = "your bot api key"  # my api key, as provided by the botfather
+    OWNER_ID = 123456789  # your telegram ID
+    OWNER_USERNAME = "username"  # your telegram username
+    API_KEY = "your bot api key"  # api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
     USE_MESSAGE_DUMP = True
-    SUDO_USERS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
+    SUDO_USERS = [123456789, 987654321]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
 ```
@@ -65,7 +55,7 @@ The following env variables are supported:
 
  - `TOKEN`: Your bot token, as a string.
  - `OWNER_ID`: An integer of consisting of your owner ID
- - `OWNER_USERNAME`: Your username
+ - `OWNER_USERNAME`: Your Telegram username
 
  - `DATABASE_URL`: Your database URL
  - `MESSAGE_DUMP`: optional: a chat where your replied saved messages are stored, to stop people deleting their old 
